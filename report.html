@@ -11923,7 +11923,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: increase for LSTAT and PTRATIO. Using the command data.plot(x='MEDV',y='LSTAT', style='x'). I found that there are a correlation between LSTAT and MEDV. The same thing happens with PTRATIO (data.plot(x='MEDV',y='PTRATIO',style='o')). A house with more rooms should worth more. A value of 6 be worth less than value of 7. </strong></p>
+<p><strong>Answer: increase for LSTAT and PTRATIO. Using the command data.plot(x='MEDV',y='LSTAT', style='x'). I found that there are a correlation between LSTAT and MEDV. The same thing happens with PTRATIO (data.plot(x='MEDV',y='PTRATIO',style='o')). A house with more rooms should worth more. A value of 6 be worth less than value of 7.LSTAT : Lower the LSTAT, higher should be the prices. PTRATIO : Lower the student teacher ratio, higher the price. </strong></p>
 
 </div>
 </div>
@@ -13737,7 +13737,7 @@ JEmSJKnM/w/OPSyW1wM+tQAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: I choose graph 3. The Graph 3 have the major Test Score .In all graphics, there are two phases. The first phase  where the test score increases with more training points. In the second phase, where the test score isn't affected by the adition of new training points. </strong></p>
+<p><strong>Answer: I choose graph 3. The Graph 3 have the major Test Score .In all graphics, there are two phases. The first phase  where the test score increases with more training points. In the second phase, where the test score isn't affected by the adition of new training points. The training score was reduced with aditional training point, suffering of overfitling</strong></p>
 
 </div>
 </div>
@@ -14526,7 +14526,7 @@ iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgt2etD4RWGGHvNUwAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: The k-fold cross-validation training technique allows  the partitioning a sample of data into subsets, multiple executions of cross-validation are performed using different partitions, and the results are averaged over the rounds.  The technique separates training and test sets without losing significant modelling or testing capability </strong></p>
+<p><strong>Answer: The k-fold cross-validation training technique allows  the partitioning a sample of data into subsets, multiple executions of cross-validation are performed using different partitions, and the results are averaged over the rounds.  The technique separates training and test sets without losing significant modelling or testing capability. Without k-fold, there  are the chances of a model performs well on a specific train-test split but poorly otherwise. Without k-fold, the grid search could selects a model that performs well on k different train-test splits but poorly otherwise. </strong></p>
 
 </div>
 </div>
@@ -14754,7 +14754,7 @@ The Minimum price are  105,000.00 and the Maximum price are 1,024,800.00
 The Mean price are 454,342.94 and the Standard deviation of prices:  165,340.28
 75% of prices of the three clients are between 289002.66 and 619683.22
 Client 1 and Client 3  have prices between the Q1 and Q3 quantis and have reasonable estimates.
-Client 2  have a value less than the Q1 quantil and it's a outlier.
+Client 2  have a value less than the Q1 quantil and it's a outlier. But, could be a reasonable estimate when compared with similar cases. What is the average number of rooms for houses with a similar number of rooms, pupil to teacher ratio and percentage of "los class" homeowners in the area? 
 It's possible to visualize the result by overlaying the prediction with histogram of the data as:
 import matplotlib.pyplot as plt
 plt.hist(prices, bins = 20)
